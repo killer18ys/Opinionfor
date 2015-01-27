@@ -85,7 +85,7 @@
                     <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ullam assumenda deserunt!</p>
 
                     <div class="form-container">   
-                        <form action="" method="post">
+                        <form action="" method="get">
                             <div class="form-item-select">
                                 <label for="category">Изберете категория</label>
                                 <select name="category" id="category">
@@ -110,6 +110,34 @@
                                 <label for="opinion-field">Мнението Ви</label>
                                 <textarea name="opinion-field" id="opinion-field"></textarea>
                             </div>
+
+                            
+                            <div class="questions-section clearfix">
+                                <div class="question-wrapper">
+                                    <p>Доволни ли сте от продукта?</p>
+                                    <div class="rating_stars_wrapper">
+                                        <input class="star" type="radio" name="q1" value="1"/>
+                                        <input class="star" type="radio" name="q1" value="2"/>
+                                        <input class="star" type="radio" name="q1" value="3"/>
+                                        <input class="star" type="radio" name="q1" value="4"/>
+                                        <input class="star" type="radio" name="q1" value="5"/>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="question-wrapper">
+                                    <p>Колко точно стедоволен от продуктаааа?</p>
+                                    <div class="rating_stars_wrapper">
+                                        <input class="star" type="radio" name="q2" value="1"/>
+                                        <input class="star" type="radio" name="q2" value="2"/>
+                                        <input class="star" type="radio" name="q2" value="3"/>
+                                        <input class="star" type="radio" name="q2" value="4"/>
+                                        <input class="star" type="radio" name="q2" value="5"/>
+                                    </div>
+                                </div>                            
+                            </div>
+                            
+                            <input type="submit">
                         </form>
                     </div>
                 </div>
@@ -244,10 +272,12 @@
             </div> 
         </footer>
 
-
+        <div id="tarp" class="modal-tarp"></div>
+        
 <!--         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/vendor/fancySelect.js"></script>
+        <script src="js/vendor/jquery.rating.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

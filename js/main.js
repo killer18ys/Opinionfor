@@ -150,6 +150,22 @@ $( document ).ready(function() {
 
 // Custom Select End
 
+
+
+//Rating Stars Start
+/*$('.hover-star').rating({ 
+	focus: function(value, link){ var tip = $('#hover-test'); 
+		tip[0].data = tip[0].data || tip.html(); 
+		tip.html(link.title || 'value: '+value); 
+	}, 
+	blur: function(value, link){
+		var tip = $('#hover-test'); 
+		$('#hover-test').html(tip[0].data || ''); 
+	} 
+});*/
+//Rating Stars End
+
+
 });
 
 
