@@ -863,7 +863,13 @@ fieldset:last-of-type{
   width: 150px;
 }
 
-.form-item input[type=text]:focus{
+.form-item input.light{
+  background: transparent;
+}
+
+.form-item input[type=text]:focus,
+.form-item input[type=password]:focus,
+.form-item input[type=email]:focus{
   background: rgba(0,0,0,0);
   transition: background 0.3s;
 }
@@ -1286,6 +1292,79 @@ p.forgot-password a:hover{
   cursor: pointer;
 }
 
+.profile-info-wrapper .container-large fieldset{
+  margin: 30px 0 16px 30px;
+}
+
+.profile-info-wrapper .container-large fieldset > label{
+  display: block;
+  color: #555;
+  opacity: 0.8;
+  margin: 2px 0 10px 2px;
+}
+
+#bio_field{
+  width: 305px;
+  height: 150px;
+  margin: 0;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 2px solid #e8ebed;
+  box-shadow: none;
+  outline: none;
+  padding: 11px 15px 12px;
+}
+
+#delete_account{
+  padding: 15px 30px;
+  background: #efefef;
+  font-size: 14px;
+  border-radius: 3px;
+  color: #888;
+}
+
+.profile-info-wrapper div.buttons-wrapp{
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px solid #ccc;
+}
+
+
+.large.green.btn{
+  font-weight: 700;
+  margin-top: -20px;
+  border-color: #0aa131;
+  padding: 15px 30px;
+  background: #00b040;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+
+.profile-info-wrapper.change-password fieldset > label{
+  display: block;
+  color: #555;
+  opacity: 0.8;
+  margin: 2px 0 10px 2px;
+}
+
+.change-password{
+  padding-top: 50px;
+}
+
+.change-password .buttons-wrapp{
+  margin-top: 65px !important; 
+}
+
+.change-password .btn.large{
+  display: block;
+  margin: 20px auto 15px;
+}
+
+.change-password fieldset{
+  width: 345px;
+  margin: 0 auto 15px;
+}
 
 
 /* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
